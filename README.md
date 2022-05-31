@@ -1,10 +1,10 @@
-# Surge clone
+# Surge Clone
 
 Replicating the features of <https://surge.sh>
 
 Requires docker
 
-Run with `sh run.sh`
+Run with `sh run-nginx.sh` or `sh run-caddy.sh`
 
 ```bash
 curl --location --request GET http://lvh.me # => sites/index.html

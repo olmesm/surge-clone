@@ -1,0 +1,19 @@
+{
+    debug
+    admin 0.0.0.0:2019
+}
+
+:80 {
+    root * /usr/share/caddy/html/{host}
+    @local expression {host}.endsWith("localhost")
+    root @local /usr/share/caddy/html/{labels.1}
+
+    try_files {path}.html {path}.json {path}.txt {path}/index.html {path}/index.json /200.html /200.json 200.txt
+    file_server
+
+    handle_errors {
+        root * /usr/share/caddy/html
+        try_files 50x.html
+        file_server
+    }
+}
