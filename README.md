@@ -1,8 +1,10 @@
-# Surge Clone
+# Surge Clone
 
-Replicating the features of <https://surge.sh>
+Replicating the features of https://surge.sh with Nginx and Caddy server
 
-Requires docker
+Requires:
+
+- [docker](http://docker.com)
 
 Run with `sh run-nginx.sh` or `sh run-caddy.sh`
 
