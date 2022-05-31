@@ -2,6 +2,8 @@
 
 Replicating the features of https://surge.sh with Nginx and Caddy server
 
+_Note:_ This was done late with :beer:; config is a mix between localhost and [lvh.me](http://lvh.me).
+
 Requires:
 
 - [docker](http://docker.com)
